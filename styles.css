@@ -1,0 +1,158 @@
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%); /*Body background*/
+  --dark-desaturated-blue: hsl(244, 38%, 16%);/*Card background*/
+  --soft-violet: hsl(277, 64%, 61%);/*Accent*/
+  --white: hsl(0, 0%, 100%); /*Heading/Stats*/
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);/*p*/
+  --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);/*H2*/
+}
+/*font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  color: var(--slightly-transparent-white);
+  margin: 0;
+  font-weight: 400;
+}
+
+.purple-accent {
+  color: var(--soft-violet);
+}
+
+.main-card { /*330 width - 780 heigth*/
+  background-color: var(--dark-desaturated-blue);
+  color: var(--white);
+  width: 80vw;
+  border-radius: 10px;
+}
+
+.img-sec {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(rgba(116, 14, 179, 0.5), rgba(116, 14, 179, 0.5)),url(./images/image-header-mobile.jpg);
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.information-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.information-text {
+  margin-bottom: 40px;
+}
+
+.information-text > p {
+  line-height: 2.4rem;
+  font-size: 1.5rem;
+}
+
+.margin {
+  margin-bottom: 25px;
+}
+
+.stats > div > h2 {
+  font-size: 2.3rem;
+}
+
+.stats > div > p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.diff-font {
+  font-family: 'Lexend Deca';
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  color: var(--white);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 720px) {
+  h1 {
+    font-size: 3.6rem;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .main-card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1100px;
+    height: 45vh;
+  }
+
+  .img-sec {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(116, 14, 179, 0.5), rgba(116, 14, 179, 0.5)),url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0;
+  }
+
+  .information-div{
+    width: 80%;
+    text-align: left;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+  }
+
+  .information-text > p {
+    padding-right: 60px;
+  }
+
+  .stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 30px;
+  }
+
+  .stats > div {
+    margin-bottom: 25px;
+    margin-right: 55px;
+  }
+}
