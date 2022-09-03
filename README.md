@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://charlieeluna23.github.io/stats-preview-card/)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/CharlieeLuna23/stats-preview-card.git)
+- Live Site URL: (https://charlieeluna23.github.io/stats-preview-card/)
 
 ## My process
 
