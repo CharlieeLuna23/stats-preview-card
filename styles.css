@@ -94,7 +94,7 @@ p {
 }
 
 footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   color: var(--white);
   text-align: center;
